@@ -1,9 +1,16 @@
 ﻿@page "/"
-
 <PageTitle>Index</PageTitle>
+<link href="Index.razor.css" rel="stylesheet">
+<PageTitle>Home</PageTitle>
+<body>
 
-<h1>Hello, world!</h1>
+    <MudText Class="mt-5 mb-5" Typo="Typo.h2" Align="Align.Center">Corner Store Apps</MudText>
+   @*<MudText Class="mb-10" Typo="Typo.h5" Align="Align.Center"></MudText>*@ 
+    <div class="cards">
+        <MudExpansionPanels MultiExpansion="true">
+                <MudExpansionPanel Text="Lorem Ipsum"> </MudExpansionPanel>
+        </MudExpansionPanels>
+    </div>
+</body>
 
-Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
